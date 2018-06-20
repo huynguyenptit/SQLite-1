@@ -2,7 +2,7 @@
 
 Các bạn thân mến,
 
-Như bạn đã biết, SQlite là cơ sở dữ liệu đơn luồng, chúng được nhúng mặc định trong hệ điều hành Linux. Có rất nhiều nghiên cứ về việc sử dụng SQLite để lưu trữ dữ liệu. Và cũng đã có nhiều nghiên cứ về cách làm thế nào truy cập cơ sở dữ liệu SQLite để phục vụ cho việc ghi đa luồng. Tôi sẽ chia sẻ nghiên cứu nhỏ của mình về việc thực hiện ghi nhiều luồng trên cơ sở dữ liệu SQLite.
+Như bạn đã biết, SQlite là cơ sở dữ liệu đơn luồng, chúng được nhúng mặc định trong hệ điều hành Linux. Có rất nhiều nghiên cứu về việc sử dụng SQLite để lưu trữ dữ liệu. Và cũng đã có nhiều nghiên cứ về cách làm thế nào truy cập cơ sở dữ liệu SQLite để phục vụ cho việc ghi đa luồng. Tôi sẽ chia sẻ nghiên cứu nhỏ của mình về việc thực hiện ghi nhiều luồng trên cơ sở dữ liệu SQLite.
 
 Hãy cùng xem các ưu và nhược điểm của SQLite.
 
