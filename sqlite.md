@@ -10,7 +10,7 @@ Hãy cùng xem các ưu và nhược điểm của SQLite.
 
 - SQLite được viết bằng ngôn ngữ lập trình C thuần. Vì vậy, việc truy cập vào ổ đĩa hoặc bộ nhớ cơ sở dữ liệu và xử lý dữ liệu là nhanh nhất. Bạn có thể liên tưởng điều này giống như việc sử dụng ổ SSD vậy. 
 
-- SQLite hỗ trợ bộ nhớ trong. Bộ nhớ trong của SQLite nhanh gấp gần 2 lần nếu như bạn hiểu về vấn đề phân trang. Nó đủ nhanh.
+- SQLite hỗ trợ bộ nhớ trong. Bộ nhớ trong của SQLite nhanh gấp gần 2 lần nếu như bạn hiểu về vấn đề phân trang. Nó đủ nhanh để làm điều đó.
 
 - SQLite là đơn luồng. Vì vậy, nguy cơ hỏng dữ liệu được gỉam thiểu tối đa.
 
@@ -20,7 +20,7 @@ Hãy cùng xem các ưu và nhược điểm của SQLite.
 
 - Đa nền tảng. SQLite có thể được sử dụng trên hầu hết tất cả các nền tảng hệ điều hành. 
 
-- Mã nguồn mở  everywhere!
+- Nó là mã nguồn mở!
 
 - và vân vân ...
 
@@ -30,7 +30,7 @@ Hãy cùng xem các ưu và nhược điểm của SQLite.
 
 - Như chúng ta đã đề cập, SQLite lưu trữ cơ sở dữ liệu trong một file. Do vậy, toàn bộ cơ sở dữ liệu được khóa lại trong quá trình ghi. Điều này rất không phù hợp đối với cơ sở dữ liệu có lượng truy cập lớn và thường xuyên.
 
-- Không yêu cầu xác thực mức ứng dụng.
+- Không có tầng yêu cầu xác thực.
 
 ### Thực hiện ghi đa luồng cùng một lúc.
 
@@ -55,3 +55,5 @@ THAY BẰNG:
 **delete from table where ROWID in ( select rowid from tepm.Lock where name='fariz' and processid='XYZ' )** // việc xóa sẽ khóa file cơ sở dữ liệu trong 0,001 giây.
 
 Ta đã hoàn thành thử nghiệm nhỏ và kết quả là rất tốt. Ta cũng có thể thể hoàn thành 2 hành động cập nhật tương tự trong 11 giây, mỗi giao dịch mất 10 giây cho bảng bao gồm 40 triệu dòng.
+
+Hi vọng nó sẽ giúp ích cho những người dùng SQLite
